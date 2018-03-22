@@ -12,7 +12,7 @@ var express = require('express')
 var app = express();
 
 // all environments
-app.set('port', process.env.PORT || 3000);
+app.set('port', process.env.PORT || 3011);
 app.set('views', __dirname + '/views');
 app.set('view engine', 'jshtml');
 app.use(express.favicon());
