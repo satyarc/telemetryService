@@ -9,6 +9,32 @@ devices = [	{"id":"D1","name":"DEVICE 1"},
 			{"id":"D5","name":"DEVICE 5"}
 			];
 
+deviceDetails = 
+	{"general":{"distance":"1000","duration":"500"},
+		"troubleCodes":[
+			{"code":"P0000","details":{"FuelSystem":"not supported",
+					"Catalyst":"completed",
+					"components":"completed",
+					"oxygensensor":"completed",
+					"description":"blah"}},
+					{"code":"P0401","details":{"FuelSystem":"completed",
+					"Catalyst":"completed",
+					"components":"completed",
+					"oxygensensor":"failed",
+					"description":"blah blah"}},
+					{"code":"P0230","details":{"FuelSystem":"completed",
+					"Catalyst":"completed",
+					"components":"failed",
+					"oxygensensor":"completed",
+					"description":"blah blah blah"}},
+					{"code":"P0670","details":{"FuelSystem":"completed",
+					"Catalyst":"failed",
+					"components":"completed",
+					"oxygensensor":"completed",
+					"description":"blah blah blah blah"}}
+		]
+	};
+
 
 exports.list = function(req, res){
 	res.setHeader('Access-Control-Allow-Origin', '*');
@@ -38,11 +64,7 @@ exports.deviceDetails = function(req, res){
     // to the API (e.g. in case you use sessions)
     res.setHeader('Access-Control-Allow-Credentials', true);
     
-	devices.forEach(function(device){
-		if(req.params.id === device.id){
-			res.send(device);
-		}
-	});
+    res.send(deviceDetails);
 	
 	//res.send("No device with the Id" + req.params.id);
 };
