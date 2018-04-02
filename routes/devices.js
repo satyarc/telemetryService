@@ -10,28 +10,15 @@ devices = [	{"id":"D1","name":"DEVICE 1"},
 			];
 
 deviceDetails = 
-	{"general":{"distance":"1000","duration":"500"},
+	{"general":{"distance":"1000","duration":"500"},"monitoredTests":{"FuelSystem":"not supported",
+															"Catalyst":"completed",
+															"components":"completed",
+															"oxygensensor":"completed"},
 		"troubleCodes":[
-			{"code":"P0000","details":{"FuelSystem":"not supported",
-					"Catalyst":"completed",
-					"components":"completed",
-					"oxygensensor":"completed",
-					"description":"blah"}},
-					{"code":"P0401","details":{"FuelSystem":"completed",
-					"Catalyst":"completed",
-					"components":"completed",
-					"oxygensensor":"failed",
-					"description":"blah blah"}},
-					{"code":"P0230","details":{"FuelSystem":"completed",
-					"Catalyst":"completed",
-					"components":"failed",
-					"oxygensensor":"completed",
-					"description":"blah blah blah"}},
-					{"code":"P0670","details":{"FuelSystem":"completed",
-					"Catalyst":"failed",
-					"components":"completed",
-					"oxygensensor":"completed",
-					"description":"blah blah blah blah"}}
+			{"code":"P0000","description":"Glow Plug Module Control - Circuit Malfuncttion"},
+			{"code":"P0401","description":"Glow Plug Module Control - Fuel system Malfuncttion"},
+			{"code":"P0230","description":"Glow Plug Module Control - Power system Malfuncttion"},
+			{"code":"P0670","description":"Glow Plug Module Control - VVT system  Malfuncttion"}
 		]
 	};
 
