@@ -15,10 +15,14 @@ deviceDetails =
 															"components":"completed",
 															"oxygensensor":"completed"},
 		"troubleCodes":[
-			{"code":"P0000","description":"Glow Plug Module Control - Circuit Malfuncttion"},
-			{"code":"P0401","description":"Glow Plug Module Control - Fuel system Malfuncttion"},
-			{"code":"P0230","description":"Glow Plug Module Control - Power system Malfuncttion"},
-			{"code":"P0670","description":"Glow Plug Module Control - VVT system  Malfuncttion"}
+			{"code":"P0000","description":"Glow Plug Module Control - Circuit Malfunction"},
+			{"code":"P0401","description":"Glow Plug Module Control - Fuel system Malfunction"},
+			{"code":"P0230","description":"Glow Plug Module Control - Power system Malfunction"},
+			{"code":"P0670","description":"Glow Plug Module Control - VVT system  Malfunction"},
+			{"code":"P0000","description":"Glow Plug Module Control - Circuit Malfunction"},
+			{"code":"P0401","description":"Glow Plug Module Control - Fuel system Malfunction"},
+			{"code":"P0230","description":"Glow Plug Module Control - Power system Malfunction"},
+			{"code":"P0670","description":"Glow Plug Module Control - VVT system  Malfunction"}
 		]
 	};
 
